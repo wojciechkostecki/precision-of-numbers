@@ -11,17 +11,18 @@ public class Main {
         int number = scanner.nextInt();
 
         if (number > 0) {
-            double x = 0;
-            while (x < number) {
-                x += 0.1;
+            double x=0;
+            while (x < number + 0.1) {
                 System.out.printf("%.1f" + " ", x);
+                x += 0.1;
             }
         }
         if (number < 0) {
             double y = 0;
+            System.out.print(0 + " ");
             while (y > number) {
-                y -= 0.1;
                 System.out.printf("%.1f" + " ", y);
+                y -= 0.1;
             }
         }
         if (number == 0) {
