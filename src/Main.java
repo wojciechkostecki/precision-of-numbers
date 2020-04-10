@@ -19,8 +19,7 @@ public class Main {
         }
         if (number < 0) {
             double y = 0;
-            System.out.print(0 + " ");
-            while (y > number) {
+            while (y > number - 0.1) {
                 System.out.printf("%.1f" + " ", y);
                 y -= 0.1;
             }
